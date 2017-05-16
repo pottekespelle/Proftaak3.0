@@ -37,8 +37,8 @@ body {
 	right: 20px;
 	position: absolute;
 	top: 50%;
-	height: 40px;
-	margin-top: -20px;
+	height: 30px;
+	margin-top: -15px;
 }
 
 .home-content {
@@ -131,3 +131,4 @@ body {
   margin-right: 10px;
   height:   100%;
 }
+
