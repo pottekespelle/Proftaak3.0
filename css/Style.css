@@ -59,6 +59,16 @@ body {
   margin-bottom: 25px;
 }
 
+.gsi-content {
+  text-align: center;
+}
+
+.gsi-content h2 {
+  color: #008aff;
+  font-size: 60px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 500px;
