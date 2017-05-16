@@ -12,17 +12,17 @@ body {
 
 .header {
 	position: relative;
-    height: 100px;
-    padding: 15px 0;
-    background: rgba(11,11,11,11);
-    background: -moz-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(11,11,11,1)), color-stop(20%, rgba(11,11,11,1)), color-stop(80%, rgba(28,28,28,1)), color-stop(100%, rgba(28,28,28,1)));
-    background: -webkit-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: -o-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: -ms-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: linear-gradient(to bottom, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    margin-bottom: 20px;
-    border-bottom: solid 1px #111111;
+  height: 100px;
+  padding: 15px 0;
+  background: rgba(11,11,11,11);
+  background: -moz-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(11,11,11,1)), color-stop(20%, rgba(11,11,11,1)), color-stop(80%, rgba(28,28,28,1)), color-stop(100%, rgba(28,28,28,1)));
+  background: -webkit-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
+  background: -o-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
+  background: -ms-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
+  background: linear-gradient(to bottom, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
+  margin-bottom: 20px;
+  border-bottom: solid 1px #111111;
 }
 
 .logo {
@@ -41,10 +41,31 @@ body {
 	margin-top: -20px;
 }
 
+.home-content {
+  text-align: center;
+}
+
+.home-content h2 {
+  color: #008aff;
+  font-size: 60px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.home-content p {
+  color: white;
+  font-size: 15px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
 .wrapper {
-	padding-top: 50px;
-	margin: 0 auto;
-	width: 500px;
+    margin: 0 auto;
+    width: 500px;
+    height: calc(100vh - 550px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-input {
@@ -81,30 +102,4 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.footer{
-    position: fixed;
-    bottom: 0px;
-    padding: 15px 0;
-    background: rgba(11,11,11,11);
-    background: -moz-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(11,11,11,1)), color-stop(20%, rgba(11,11,11,1)), color-stop(80%, rgba(28,28,28,1)), color-stop(100%, rgba(28,28,28,1)));
-    background: -webkit-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: -o-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: -ms-linear-gradient(top, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    background: linear-gradient(to bottom, rgba(11,11,11,1) 0%, rgba(11,11,11,1) 20%, rgba(28,28,28,1) 80%, rgba(28,28,28,1) 100%);
-    width: 100vw;
-    border-top: solid 1px #111111;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.copyright-footer{
-    margin-left: 10px;
-}
-
-.madeby-footer{
-    margin-right: 10px;
 }
