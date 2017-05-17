@@ -20,13 +20,12 @@
 	<div class="wrapper">
 		<div class="form-input">
 			<label class="icon glyphicon glyphicon-pencil"></label>
-			<button id="convert" class="button glyphicon glyphicon-search"></button>
+			<a href="/stats/"><button  id="convert" class="button glyphicon glyphicon-search"></button></a>
 			<input type="text" class="input" value="76561198344278706" />
 		</div>
 	</div>
 </div>
 	<div class="footer">
-		<!-- left copyright right made by -->
 		<label class="copyright-footer">Copyright 2017 &copy; CSHUB</label>
 		<label class="madeby-footer">Made by: Niels v. Laarhoven &amp; Quinten Vis</label>
 	</div>

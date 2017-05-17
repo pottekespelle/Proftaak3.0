@@ -69,13 +69,38 @@ body {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
+.gsi-content p {
+  color: white;
+  width: 100%;  
+}
+
+.rounds {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bomb, .ammo {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ammo {
+  font-size: 90px;
+}
+
 .wrapper {
-    margin: 0 auto;
-    width: 500px;
-    height: calc(100vh - 550px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto;
+  width: 500px;
+  height: calc(100vh - 550px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-input {

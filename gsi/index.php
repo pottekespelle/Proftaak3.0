@@ -14,10 +14,16 @@
 
 	<div class="gsi-content">
     	<h2>GSI</h2>
+    	<div class="rounds"><p><strong>CT</strong></p><p><strong>T</strong></p></div>
+    	<div class="rounds"><p>16</p><p>8</p></div>
+    	<br>
+    	<div class="bomb"><p><strong>Round Time</strong></p></div>
+    	<div class="ammo"><p><strong>1:30</strong></p></div>
+    	<img src="http://www.stickthisgraphics.com/images/Ak%2047%20Silhouette%20(Small).jpg">
+    	<img src="https://assets.csgoitems.pro/cache/svg/weapons_icons/usp_silencer.svg">
     </div>
 
 	<div class="footer">
-		<!-- left copyright right made by -->
 		<label class="copyright-footer">Copyright 2017 &copy; CSHUB</label>
 		<label class="madeby-footer">Made by: Niels v. Laarhoven &amp; Quinten Vis</label>
 	</div>
