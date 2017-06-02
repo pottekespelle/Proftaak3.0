@@ -43,7 +43,7 @@
 
 	if (!isset($decodedS->response->players[0]->personaname)) {
 		echo "is not set the player";
-		die();
+		//die();
 	}
 /*
 	//$getSteamIDurl = "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=D0C68A4E5F57A048312D534258583751&vanityurl=pottekespelle";
