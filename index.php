@@ -1,5 +1,4 @@
 <?php 
-	session_unset();
 ?>
 
 <!DOCTYPE html>
@@ -24,18 +23,25 @@
 
 	<div class="header">
 		<form method="post">
-        <a href="index.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
+        <a href="protect.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
 
         <div class="loggedinstats-index">
         	<label> <?php echo $steamprofile['personaname']; ?> </label>
         	<img src="<?php echo $steamprofile['avatar']; ?>">
+
+        	<?php 
+        		if ($steamprofile['steamid'] == '76561198312027283'){
+        			?><a href="gsi/index.php">naar de gsi pagina</a>
+        			<?php
+        		}
+        	?>
         </div>
 
         <label class="login">
 	        <?php
 				logoutbutton();
 			?>	
-		</label>>
+		</label>
 
         </form>
 
