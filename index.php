@@ -1,6 +1,5 @@
 <?php 
 	session_unset();
-	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -24,13 +23,20 @@
 <div>
 
 	<div class="header">
-		<form method="post" action="actions.php">
+		<form method="post">
         <a href="index.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
-        <!-- <input class="logo" type="submit" name="destroy" value=""> -->
-        <!-- <img type="submit" name="destroy" src="img/logo.png" class="logo"> -->
 
-        <a href="index.php"><img src="img/login.png" class="login"></a>
-        
+        <div class="loggedinstats-index">
+        	<label> <?php echo $steamprofile['personaname']; ?> </label>
+        	<img src="<?php echo $steamprofile['avatar']; ?>">
+        </div>
+
+        <label class="login">
+	        <?php
+				logoutbutton();
+			?>	
+		</label>>
+
         </form>
 
     </div>
