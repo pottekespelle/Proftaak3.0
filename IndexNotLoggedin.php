@@ -20,7 +20,7 @@
 
 	<div class="header">
 		<form method="post">
-        <a href="index.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
+        <a href="protect.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
         
 
         </form>
