@@ -29,9 +29,10 @@
 
 	//$CSGOapi_url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D0C68A4E5F57A048312D534258583751&steamid=$steamidMax";
 
-	$steamUserStats = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=D0C68A4E5F57A048312D534258583751&steamids=$steamidQuinten";
+	$steamUserStats = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=D0C68A4E5F57A048312D534258583751&steamids=$steamid";
+	
 
-	$CSGOapi_url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D0C68A4E5F57A048312D534258583751&steamid=$steamidQuinten";
+	$CSGOapi_url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D0C68A4E5F57A048312D534258583751&steamid=$steamid";
 
 	$json = file_get_contents($CSGOapi_url);
 
