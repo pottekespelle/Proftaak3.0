@@ -15,8 +15,6 @@
 
 #stats-maps{
 	color: black;
-	border: 2px solid black;
-	border-radius: 5px;
 	text-align: center;
 	width: 30%;
 	font-size: 15px;
@@ -24,6 +22,7 @@
 }
 
 #stats-maps h1{
+	border-bottom: 3px solid black;
 	margin: 0 auto;
 	color: #008aff;
 	font-size: 30px;
@@ -31,6 +30,7 @@
 }
 
 #stats-guns h1{
+	border-bottom: 3px solid black;
 	margin: 0 auto;
 	color: #008aff;
 	font-size: 30px;
@@ -38,19 +38,17 @@
 }
 
 #stats-maps-mostPlayed{
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
 	width: 100%;
 	font-size: 20px;
 }
 
 #stats-maps-mostPlayed img{
+	margin-top: 5px;
 	width: 100%;
 	border-radius: 3px;
 }
 
 #stats-maps-index{
-	border-top: 2px solid black;
 	background: #FFFBF5;
 }
 
@@ -65,8 +63,6 @@
 
 #stats-guns{
 	color: black;
-	border: 2px solid black;
-	border-radius: 5px;
 	text-align: center;
 	width: 30%;
 	height: 55%;

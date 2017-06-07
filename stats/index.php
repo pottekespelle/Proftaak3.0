@@ -29,9 +29,9 @@
 
 	//$CSGOapi_url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D0C68A4E5F57A048312D534258583751&steamid=$steamidMax";
 
-	$steamUserStats = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=D0C68A4E5F57A048312D534258583751&steamids=$steamid";
+	$steamUserStats = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=D0C68A4E5F57A048312D534258583751&steamids=$steamidQuinten";
 
-	$CSGOapi_url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D0C68A4E5F57A048312D534258583751&steamid=$steamid";
+	$CSGOapi_url = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=D0C68A4E5F57A048312D534258583751&steamid=$steamidQuinten";
 
 	$json = file_get_contents($CSGOapi_url);
 
@@ -327,70 +327,87 @@
 	switch ($MostPlayed) {
 			case 'total_rounds_map_cs_assault':
 				$MostplayedMap = "assault";
+				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/0/00/Cs_assault_go.png/revision/latest/scale-to-width-down/250?cb=20140819095651";
 				break;
 
 			case 'total_rounds_map_cs_italy':
 				$MostplayedMap = "italy";
+				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/2/2c/Cs_italy_csgo.png/revision/latest/scale-to-width-down/250?cb=20140819100829";
 				break;
 
 			case 'total_rounds_map_cs_office':
-				$MostplayedMap = "assault";
+				$MostplayedMap = "office";
+				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/f/f7/Csgo-cs-office.png/revision/latest/scale-to-width-down/250?cb=20140820132335";
 				break;
 
 			case 'total_rounds_map_de_aztec':
 				$MostplayedMap = "aztec";
+				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/f/fd/Csgo-de-aztec.png/revision/latest/scale-to-width-down/250?cb=20140820131837";
 				break;
 
 			case 'total_rounds_map_de_cbble':
 				$MostplayedMap = "cbble";
+				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/e/ed/Csgo-de-cbble.png/revision/latest/scale-to-width-down/250?cb=20140820131432";
 				break;
 
 			case 'total_rounds_map_de_dust2':
 				$MostplayedMap = "dust2";
+				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/6/6f/Csgo-de-dust2.png/revision/latest/scale-to-width-down/250?cb=20140820131233";
 				break;
 
 			case 'total_rounds_map_de_dust':
 				$MostplayedMap = "dust";
+				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/6/6d/Csgo-de-dust.png/revision/latest/scale-to-width-down/250?cb=20140820131343";
 				break;
 
 			case 'total_rounds_map_de_inferno':
 				$MostplayedMap = "inferno";
+				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/f/f0/Inferno.jpg/revision/latest/scale-to-width-down/250?cb=20161014013320";
 				break;
 
 			case 'total_rounds_map_de_nuke':
 				$MostplayedMap = "nuke";
+				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/e/e5/Csgo-nuke-2016feb17.png/revision/latest/scale-to-width-down/250?cb=20160219144345";
 				break;
 
 			case 'total_rounds_map_de_train':
 				$MostplayedMap = "train";
+				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/4/4a/De_train_thumbnail.png/revision/latest/scale-to-width-down/250?cb=20160110213749";
 				break;
 
 			case 'total_rounds_map_de_lake':
 				$MostplayedMap = "lake";
+				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/0/08/Csgo-de-lake.png/revision/latest/scale-to-width-down/250?cb=20140820130934";
 				break;
 
 			case 'total_rounds_map_de_safehouse':
 				$MostplayedMap = "safehouse";
+				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/2/27/Csgo-de-safehouse.png/revision/latest/scale-to-width-down/250?cb=20140820130431";
 				break;
 
 			case 'total_rounds_map_de_bank':
 				$MostplayedMap = "bank";
+				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/a/a9/Csgo-de-bank.png/revision/latest/scale-to-width-down/250?cb=20140820131729";
 				break;
 
 			case 'total_rounds_map_ar_shoots':
 				$MostplayedMap = "shoots";
+				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/5/5d/Ar_shoots.png/revision/latest/scale-to-width-down/250?cb=20140819094937";
 				break;
 
 			case 'total_rounds_map_ar_baggage':
 				$MostplayedMap = "baggage";
+				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/c/c4/Ar_baggage.png/revision/latest/scale-to-width-down/250?cb=20140819012337";
 				break;
 
 			case 'total_rounds_map_ar_monastery':
 				$MostplayedMap = "monastery";
+				$FavMapIcon = "https://vignette4.wikia.nocookie.net/cswikia/images/e/e1/Ar_monastery.png/revision/latest/scale-to-width-down/250?cb=20140819030928";
 				break;
 
 			case 'total_rounds_map_de_vertigo':
 				$MostplayedMap = "vertigo";
+				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/d/df/Csgo-de-vertigo.png/revision/latest/scale-to-width-down/250?cb=20140820125311";
 				break;
 		
 		default:
@@ -695,7 +712,7 @@
     		<h1>favorite map</h1>
 
     		<div id="stats-maps-mostPlayed">
-    			<img src="../img/<?php echo $MostplayedMap; ?>_map_ForStats.jpg">
+    			<img src="<?php echo $FavMapIcon; ?>">
     		</div>
 
     		<div id="stats-maps-index">
