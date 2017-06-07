@@ -34,6 +34,7 @@ if (isset($_GET['login'])){
 				$_SESSION['steamid'] = $matches[1];
 				if (!headers_sent()) {
 					header('Location: '.$steamauth['loginpage']);
+					echo("<script>console.log('PHP: ". "Loggedin" ."');</script>");
 					exit;
 				} else {
 					?>

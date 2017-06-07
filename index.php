@@ -1,5 +1,4 @@
-<?php 
-?>
+
 
 <!DOCTYPE html>
 
@@ -34,14 +33,12 @@
         			?><a href="gsi/index.php">naar de gsi pagina</a>
         			<?php
         		}
+        		echo("<script>console.log('steamid: ". $steamprofile['steamid'] ."');</script>");
         	?>
         </div>
-
-        <label class="login">
 	        <?php
 				logoutbutton();
 			?>	
-		</label>
 
         </form>
 
