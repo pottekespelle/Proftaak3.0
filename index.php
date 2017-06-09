@@ -15,14 +15,6 @@
 
 	        	<label> <?php echo $steamprofile['personaname']; ?> </label>
 	        	<img src="<?php echo $steamprofile['avatar']; ?>">
-
-	        	<?php 
-	        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706'){
-	        			?><a href="gsi/index.php">naar de gsi pagina</a>
-	        			<?php
-	        		}
-	        		echo("<script>console.log('steamid: ". $steamprofile['steamid'] ."');</script>");
-	        	?>
 	        </div>
         </form>
     </div>
@@ -32,13 +24,16 @@
 		<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?></a>
 		<ul class="dropdown-menu">
 			<li>
+				<?php 
+	        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
+	        		{
+	        			echo '<a href="http://localhost:1929" target="_blank">GSI</a>';
+					}
+	        	?>
+
+			</li>
+			<li>
 				<a href="#" onclick="myAjax()">Logout</a>
-			</li>
-			<li>
-				<a href="#">Drop Item 2</a>
-			</li>
-			<li>
-				<a href="#">Drop Item 3</a>
 			</li>
 		</ul>
 	</li>
@@ -65,5 +60,8 @@
 	<label class="copyright-footer">Copyright 2017 &copy; CSHUB</label>
 	<label class="madeby-footer">Made by: Niels v. Laarhoven &amp; Quinten Vis</label>
 </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -26,10 +26,10 @@ jQuery(document).ready(function (e) {
 function myAjax() {
       $.ajax({
            type: "POST",
-           url: '../ajax/ajax.php',
+           url: 'ajax/ajax.php',
            data:{action:'call_this'},
            success:function(html) {
-             alert(html);
+             location.reload();
            }
       });
  }
