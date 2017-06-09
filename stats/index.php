@@ -708,43 +708,45 @@
 			</section>
     	</div>
 
-    	<div id="stats-maps">
-    		<!-- <label>MAPS</label> -->
-    		<h1>favorite map</h1>
+    	<div id="statsFavThingsContainer">
+	    	<div id="stats-maps">
+	    		<!-- <label>MAPS</label> -->
+	    		<h1>favorite map</h1>
 
-    		<div id="stats-maps-mostPlayed">
-    			<img src="<?php echo $FavMapIcon; ?>">
-    		</div>
+	    		<div id="stats-maps-mostPlayed">
+	    			<img src="<?php echo $FavMapIcon; ?>">
+	    		</div>
 
-    		<div id="stats-maps-index">
-    			<table>
+	    		<div id="stats-maps-index">
+	    			<table>
 
-					<tr>
-						<td>1 <?php echo $MostplayedMap;?>  </td>
-					</tr>
-	
-    			</table>
-    		</div>
-    		
-    	</div>
+						<tr>
+							<td><?php echo $MostplayedMap;?>  </td>
+						</tr>
+		
+	    			</table>
+	    		</div>
+	    		
+	    	</div>
 
-    	<div id="stats-guns">
-    		<h1>favorite gun</h1>
+	    	<div id="stats-guns">
+	    		<h1>favorite gun</h1>
 
-    		<div id="stats-maps-mostPlayed">
-    			<img src="<?php echo $FavGunIcon; ?>">
-    		</div>
+	    		<div id="stats-maps-mostPlayed">
+	    			<img src="<?php echo $FavGunIcon; ?>">
+	    		</div>
 
-    		<div id="stats-maps-index">
-    			<table>
+	    		<div id="stats-maps-index">
+	    			<table>
 
-	    			<tr>
-	    				<td>1 <?php echo $FavGun; ?></td>
-	    			</tr>
-    			
-    			</table>
-    		</div>
-    	</div>
+		    			<tr>
+		    				<td><?php echo $FavGun; ?></td>
+		    			</tr>
+	    			
+	    			</table>
+	    		</div>
+	    	</div>
+	    </div>
     </div>
 <script src="https://dff2h0hbfv6w4.cloudfront.net/scripts/embed-stanzacal-v1.js"></script>
 </div>

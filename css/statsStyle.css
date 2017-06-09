@@ -8,6 +8,14 @@
 	flex-wrap: wrap;
 }
 
+#statsFavThingsContainer{
+	width: 80vw;
+	height: 50vh;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
 #overall-stats-container{
 	width: 100%;
 	height: 200px;
@@ -16,9 +24,8 @@
 #stats-maps{
 	color: black;
 	text-align: center;
-	width: 30%;
 	font-size: 15px;
-	height: 55%;
+	height: 50vh;
 }
 
 #stats-maps h1{
@@ -46,10 +53,7 @@
 	margin-top: 5px;
 	width: 100%;
 	border-radius: 3px;
-}
-
-#stats-maps-index{
-	background: #FFFBF5;
+	height: 100%;
 }
 
 #stats-maps-index table{
@@ -58,15 +62,19 @@
 }
 
 #stats-maps-index table tr td{
-	font-size: 18px;
+	/*font-size: 18px;*/
+	text-align: center;
+	color: #008aff;
+	font-size: 30px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 #stats-guns{
 	color: black;
 	text-align: center;
-	width: 30%;
-	height: 55%;
 	font-size: 15px;
+	height: 50vh;
 }
 
 .player-stats-summary .chart {
