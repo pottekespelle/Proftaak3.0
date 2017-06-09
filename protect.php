@@ -10,7 +10,7 @@ if(!isset($_SESSION['steamid'])) {
 	include ('SteamAuthentication/steamauth/userInfo.php');
 	echo "you are logged in";
 	echo $steamprofile['personaname'];
-	//logoutbutton();
+	logoutbutton();
 	require ("index.php");
 }
 
