@@ -13,32 +13,29 @@
 
 	        <div class="loggedinstats-index">
 
-	        	<label> <?php echo $steamprofile['personaname']; ?> </label>
-	        	<img src="<?php echo $steamprofile['avatar']; ?>">
+	        	<ul class="nav">
+					<li class="button-dropdown">
+						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img src="<?php echo $steamprofile['avatar']; ?>"></a>
+						<ul class="dropdown-menu">
+							<li>
+								<?php 
+					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
+					        		{
+					        			echo '<a href="http://localhost:1929" target="_blank">GSI</a>';
+									}
+					        	?>
+
+							</li>
+							<li>
+								<a href="#" onclick="myAjax()">Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+	        	
 	        </div>
         </form>
     </div>
-
-<ul class="nav">
-	<li class="button-dropdown">
-		<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?></a>
-		<ul class="dropdown-menu">
-			<li>
-				<?php 
-	        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
-	        		{
-	        			echo '<a href="http://localhost:1929" target="_blank">GSI</a>';
-					}
-	        	?>
-
-			</li>
-			<li>
-				<a href="#" onclick="myAjax()">Logout</a>
-			</li>
-		</ul>
-	</li>
-</ul>
-
 	<div class="home-content">
     	<h2>CSHUB</h2>
 

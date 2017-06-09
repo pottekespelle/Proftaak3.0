@@ -35,12 +35,13 @@ body {
 }
 
 .loggedinstats-index{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
   text-align: right;
-  height: 50px;
+  height: 100%;
   color: white;
   font-size: 18px;
-  top: 50%;
-  margin-top: 10px;
 }
 
 .loggedinstats-index img {
@@ -195,6 +196,7 @@ body {
 .nav li {
     display: inline-block;
     list-style: none;
+    width: 250px;
 }
 
 .nav .button-dropdown {
@@ -203,8 +205,7 @@ body {
 
 .nav li a {
     display: block;
-    color: #333;
-    background-color: #fff;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -213,16 +214,18 @@ body {
     display: inline-block;
     margin-left: 5px;
     font-size: 10px;
+    background-color: #fff;
     color: #999;
 }
 
 .nav li a:hover, .nav li a.dropdown-toggle.active {
-    background-color: #289dcc;
+    background-color: #135996;
     color: #fff;
 }
 
 .nav li a:hover span, .nav li a.dropdown-toggle.active span {
     color: #fff;
+    width: 100%;
 }
 
 .nav li .dropdown-menu {
@@ -233,6 +236,7 @@ body {
     margin: 0;
     margin-top: 3px;
     text-align: left;
+    background-color: #fff;
 }
 
 .nav li .dropdown-menu.active {
@@ -240,5 +244,10 @@ body {
 }
 
 .nav li .dropdown-menu a {
-    width: 150px;
+    width: 100%;
+    color: #999;
+}
+
+.nav li .dropdown-menu a:hover{
+    color: white;
 }
