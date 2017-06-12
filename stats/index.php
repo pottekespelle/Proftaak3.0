@@ -1,5 +1,5 @@
 <?php 
-	//error_reporting(0);
+	error_reporting(0);
 	session_start();
 	//made by niels van laarhoven	
 
@@ -327,87 +327,87 @@
 
 	switch ($MostPlayed) {
 			case 'total_rounds_map_cs_assault':
-				$MostplayedMap = "assault";
+				$MostplayedMap = "Assault";
 				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/0/00/Cs_assault_go.png/revision/latest/scale-to-width-down/250?cb=20140819095651";
 				break;
 
 			case 'total_rounds_map_cs_italy':
-				$MostplayedMap = "italy";
+				$MostplayedMap = "Italy";
 				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/2/2c/Cs_italy_csgo.png/revision/latest/scale-to-width-down/250?cb=20140819100829";
 				break;
 
 			case 'total_rounds_map_cs_office':
-				$MostplayedMap = "office";
+				$MostplayedMap = "Office";
 				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/f/f7/Csgo-cs-office.png/revision/latest/scale-to-width-down/250?cb=20140820132335";
 				break;
 
 			case 'total_rounds_map_de_aztec':
-				$MostplayedMap = "aztec";
+				$MostplayedMap = "Aztec ♥";
 				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/f/fd/Csgo-de-aztec.png/revision/latest/scale-to-width-down/250?cb=20140820131837";
 				break;
 
 			case 'total_rounds_map_de_cbble':
-				$MostplayedMap = "cbble";
+				$MostplayedMap = "Cobblestone";
 				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/e/ed/Csgo-de-cbble.png/revision/latest/scale-to-width-down/250?cb=20140820131432";
 				break;
 
 			case 'total_rounds_map_de_dust2':
-				$MostplayedMap = "dust2";
+				$MostplayedMap = "Dust 2";
 				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/6/6f/Csgo-de-dust2.png/revision/latest/scale-to-width-down/250?cb=20140820131233";
 				break;
 
 			case 'total_rounds_map_de_dust':
-				$MostplayedMap = "dust";
+				$MostplayedMap = "Dust";
 				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/6/6d/Csgo-de-dust.png/revision/latest/scale-to-width-down/250?cb=20140820131343";
 				break;
 
 			case 'total_rounds_map_de_inferno':
-				$MostplayedMap = "inferno";
+				$MostplayedMap = "Inferno";
 				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/f/f0/Inferno.jpg/revision/latest/scale-to-width-down/250?cb=20161014013320";
 				break;
 
 			case 'total_rounds_map_de_nuke':
-				$MostplayedMap = "nuke";
+				$MostplayedMap = "Nuke";
 				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/e/e5/Csgo-nuke-2016feb17.png/revision/latest/scale-to-width-down/250?cb=20160219144345";
 				break;
 
 			case 'total_rounds_map_de_train':
-				$MostplayedMap = "train";
+				$MostplayedMap = "Train";
 				$FavMapIcon = "https://vignette1.wikia.nocookie.net/cswikia/images/4/4a/De_train_thumbnail.png/revision/latest/scale-to-width-down/250?cb=20160110213749";
 				break;
 
 			case 'total_rounds_map_de_lake':
-				$MostplayedMap = "lake";
+				$MostplayedMap = "Lake";
 				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/0/08/Csgo-de-lake.png/revision/latest/scale-to-width-down/250?cb=20140820130934";
 				break;
 
 			case 'total_rounds_map_de_safehouse':
-				$MostplayedMap = "safehouse";
+				$MostplayedMap = "Safehouse";
 				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/2/27/Csgo-de-safehouse.png/revision/latest/scale-to-width-down/250?cb=20140820130431";
 				break;
 
 			case 'total_rounds_map_de_bank':
-				$MostplayedMap = "bank";
+				$MostplayedMap = "Bank";
 				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/a/a9/Csgo-de-bank.png/revision/latest/scale-to-width-down/250?cb=20140820131729";
 				break;
 
 			case 'total_rounds_map_ar_shoots':
-				$MostplayedMap = "shoots";
+				$MostplayedMap = "Shoots";
 				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/5/5d/Ar_shoots.png/revision/latest/scale-to-width-down/250?cb=20140819094937";
 				break;
 
 			case 'total_rounds_map_ar_baggage':
-				$MostplayedMap = "baggage";
+				$MostplayedMap = "Baggage";
 				$FavMapIcon = "https://vignette2.wikia.nocookie.net/cswikia/images/c/c4/Ar_baggage.png/revision/latest/scale-to-width-down/250?cb=20140819012337";
 				break;
 
 			case 'total_rounds_map_ar_monastery':
-				$MostplayedMap = "monastery";
+				$MostplayedMap = "Monastery";
 				$FavMapIcon = "https://vignette4.wikia.nocookie.net/cswikia/images/e/e1/Ar_monastery.png/revision/latest/scale-to-width-down/250?cb=20140819030928";
 				break;
 
 			case 'total_rounds_map_de_vertigo':
-				$MostplayedMap = "vertigo";
+				$MostplayedMap = "Vertigo";
 				$FavMapIcon = "https://vignette3.wikia.nocookie.net/cswikia/images/d/df/Csgo-de-vertigo.png/revision/latest/scale-to-width-down/250?cb=20140820125311";
 				break;
 		
@@ -418,162 +418,162 @@
 
 	switch ($MostPlayedGun) {
 		case 'total_kills_knife':
-			$FavGun = "knife";
+			$FavGun = "Knife";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/4/4b/Knife_ct_hud_outline_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 
 		case 'total_kills_taser':
-			$FavGun = "Zeus";
+			$FavGun = "Zeus x27";
 			$FavGunIcon = "";
 			break;
 			
 		case 'total_kills_molotov':
-			$FavGun = "molotov";
+			$FavGun = "Molotov";
 			$FavGunIcon = "http://vignette3.wikia.nocookie.net/cswikia/images/f/fc/Molotov_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_galilar':
-			$FavGun = "galil";
+			$FavGun = "Galil AR";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/4/4a/Galilar_hud.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_m4a1':
-			$FavGun = "m4a1";
+			$FavGun = "M4A1";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/d/d9/M4a4_hud.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_mag7':
-			$FavGun = "mag7";
+			$FavGun = "SWAG-7";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/2/2e/Mag7_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_tec9':
-			$FavGun = "teg9";
+			$FavGun = "Tec-9";
 			$FavGunIcon = "http://vignette3.wikia.nocookie.net/cswikia/images/5/55/Tec9_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_bizon':
-			$FavGun = "bp-bizon";
+			$FavGun = "PP-Boizan";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/d/d5/Bizon_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_sawedoff':
-			$FavGun = "sawedoff";
+			$FavGun = "Sawed-Off";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/9/94/Sawedoff_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_negev':
-			$FavGun = "negev";
+			$FavGun = "Negev";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/b/be/Negev_hud.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_nova':
-			$FavGun = "nova";
+			$FavGun = "Nova";
 			$FavGunIcon = "http://vignette4.wikia.nocookie.net/cswikia/images/c/c8/Nova_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_mp9':
-			$FavGun = "mp9";
+			$FavGun = "MP9";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/1/14/Mp9_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_mp7':
-			$FavGun = "mp7";
+			$FavGun = "MP7";
 			$FavGunIcon = "http://vignette4.wikia.nocookie.net/cswikia/images/8/8d/Mp7_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_ssg08':
-			$FavGun = "ssg08";
+			$FavGun = "SSG 08";
 			$FavGunIcon = "http://vignette4.wikia.nocookie.net/cswikia/images/3/3c/Ssg08_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_scar20':
-			$FavGun = "scar20";
+			$FavGun = "SCAR-20";
 			$FavGunIcon = "http://vignette4.wikia.nocookie.net/cswikia/images/c/c9/Scar20_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_sg556':
-			$FavGun = "sg556";
+			$FavGun = "SG 553";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/9/9b/Sg556_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_p250':
-			$FavGun = "p250";
+			$FavGun = "P250";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/5/57/P250_hud.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_hkp2000':
-			$FavGun = "p2000";
+			$FavGun = "P2000";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/6/67/Hkp2000_hud.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_m249':
-			$FavGun = "m249";
+			$FavGun = "The Missclick";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/e/ea/M249_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_g3sg1':
-			$FavGun = "g3sg1";
+			$FavGun = "G3SG1";
 			$FavGunIcon = "http://vignette4.wikia.nocookie.net/cswikia/images/4/4a/G3sg1_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_famas':
-			$FavGun = "famas";
+			$FavGun = "Famas";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/8/8f/Famas_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 
 		case 'total_kills_aug':
-			$FavGun = "aug";
+			$FavGun = "AUG";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/6/6f/Aug_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_ak47':
-			$FavGun = "ak47";
+			$FavGun = "AK-47";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/7/76/Ak47_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_awp':
-			$FavGun = "awp";
+			$FavGun = "AWP";
 			$FavGunIcon = "http://vignette3.wikia.nocookie.net/cswikia/images/e/eb/Awp_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_p90':
-			$FavGun = "p90";
+			$FavGun = "PRO90";
 			$FavGunIcon = "http://vignette3.wikia.nocookie.net/cswikia/images/b/bd/P90_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 
 		case 'total_kills_ump45':
-			$FavGun = "ump45";
+			$FavGun = "UMP-45";
 			$FavGunIcon = "http://vignette3.wikia.nocookie.net/cswikia/images/c/c4/Ump45_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_mac10':
-			$FavGun = "mac10";
+			$FavGun = "MAC-10";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/f/f7/Mac10_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_xm1014':
-			$FavGun = "mx1014";
+			$FavGun = "XM1024";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/a/ad/Xm1014_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_fiveseven':
-			$FavGun = "fiveseven";
+			$FavGun = "Five-SeveN";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/9/9c/Fiveseven_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_deagle':
-			$FavGun = "deagle";
+			$FavGun = "Desert Eagle";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/7/7d/Deagle_hud_go.png/revision/latest/scale-to-width-down/400";
 			break;
 			
 		case 'total_kills_glock':
-			$FavGun = "glock";
+			$FavGun = "Glock-18";
 			$FavGunIcon = "http://vignette2.wikia.nocookie.net/cswikia/images/3/33/Glock18_hud_csgo.png/revision/latest/scale-to-width-down/400";
 			break;
 
 		case 'total_kills_hegrenade':
-			$FavGun = "granade";
+			$FavGun = "HE Grenade";
 			$FavGunIcon = "http://vignette1.wikia.nocookie.net/cswikia/images/6/60/Ammo_hegrenade_css.png/revision/latest/scale-to-width-down/400";
 			break;
 			
@@ -710,8 +710,7 @@
 
     	<div id="statsFavThingsContainer">
 	    	<div id="stats-maps">
-	    		<!-- <label>MAPS</label> -->
-	    		<h1>favorite map</h1>
+	    		<h1>Favorite Map</h1>
 
 	    		<div id="stats-maps-mostPlayed">
 	    			<img src="<?php echo $FavMapIcon; ?>">
@@ -730,7 +729,7 @@
 	    	</div>
 
 	    	<div id="stats-guns">
-	    		<h1>favorite gun</h1>
+	    		<h1>Favorite Gun</h1>
 
 	    		<div id="stats-maps-mostPlayed">
 	    			<img src="<?php echo $FavGunIcon; ?>">
