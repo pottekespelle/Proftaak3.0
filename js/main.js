@@ -32,4 +32,15 @@ function myAjax() {
              location.reload();
            }
       });
- }
+}
+
+function myAjaxStats() {
+    $.ajax({
+         type: "POST",
+         url: '../ajax/ajax.php',
+         data:{action:'call_this'},
+         success:function(html) {
+           location.reload();
+         }
+    });
+}

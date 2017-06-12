@@ -1,12 +1,20 @@
 <?php 
+	require ('../SteamAuthentication/steamauth/steamauth.php');
+	include ('../SteamAuthentication/steamauth/userInfo.php');
+	
 	error_reporting(0);
-	session_start();
+	//session_start();
 	//made by niels van laarhoven	
 
 	/*if (!isset($_POST['steamid64Input'])) {
 		location("location: index.php");
 		die();
 	}*/
+
+	// if ($_POST['SteamIdInputButton'] == 0) {
+	// 	echo "nothing in input";
+	// 	header('location: ../protect.php');
+	// }
 
 	$api_key = "D0C68A4E5F57A048312D534258583751"; 
 	$steamid = " "; 
@@ -15,15 +23,27 @@
 	$steamidMax = '76561198068832867';
 	$game_id = "730";
 
+	if ($_GET['$id'] == 2) {
+		$steamid = $steamprofile['steamid'];
+	}
+
+	else{
+		if (isset($_POST['SteamIdInputButton'])) {
+		$_SESSION['steamid64'] = $_POST['steamid64Input'];
+	}
+
+		$steamid = $_SESSION['steamid64'];
+	}
+
+
+
+	
+
 	if (isset($_POST['destroy'])) {
 		//session_clear();
 		session_destroy();
 	}
-	if (isset($_POST['SteamIdInputButton'])) {
-		$_SESSION['steamid64'] = $_POST['steamid64Input'];
-	}
-
-	$steamid = $_SESSION['steamid64'];
+	
 
 	//echo "steamiD: ". $steamid. " dat is m ";
 
@@ -592,6 +612,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/statsStyle.css">
 	
 	<script type="text/javascript" src="../js/main.js"></script>
+
 </head>
 <body>
 <!-- <pre> 
@@ -604,7 +625,32 @@
 	<div class="header">
 		<form method="post" action="../index.php">
 	        <a href="../protect.php" name="destroy"><img src="../img/logo.png" class="logo"></a>
-	        <a><img src="../img/login.png" class="login"></a>
+	        <div class="loggedinstats-index">
+
+	        	<ul class="nav">
+					<li class="button-dropdown">
+						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img src="<?php echo $steamprofile['avatar']; ?>"></a>
+						<ul class="dropdown-menu">
+							<li>
+								<?php 
+					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
+					        		{
+					        			echo '<a href="http://localhost:1929" target="_blank">GSI</a>';
+									}
+					        	?>
+
+							</li>
+							<li>
+								<a href="protect.php" onclick="myAjaxStats()">Logout</a>
+							</li>
+							<li>
+								<a href="stats/index.php?$id=2">My Stats</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+	        	
+	        </div>
         </form>
     </div>
     
@@ -747,7 +793,8 @@
 	    	</div>
 	    </div>
     </div>
-<script src="https://dff2h0hbfv6w4.cloudfront.net/scripts/embed-stanzacal-v1.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </div>
 	<div class="footer">
 		<!-- left copyright right made by -->

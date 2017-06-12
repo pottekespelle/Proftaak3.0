@@ -29,6 +29,9 @@
 							<li>
 								<a href="#" onclick="myAjax()">Logout</a>
 							</li>
+							<li>
+								<a href="stats/index.php?$id=2">My Stats</a>
+							</li>
 						</ul>
 					</li>
 				</ul>

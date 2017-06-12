@@ -5,8 +5,9 @@
 		require '../SteamAuthentication/steamauth/SteamConfig.php';
 		session_unset();
 		session_destroy();
-
-		header('Refresh: 1; url=../'.$steamauth['logoutpage']);
-	
+		
+		try{
+			header('Refresh: 1; url=../'.$steamauth['logoutpage']);
+	}
 	}
 ?>
