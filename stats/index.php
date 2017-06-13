@@ -635,7 +635,7 @@
 								<?php 
 					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
 					        		{
-					        			echo '<a href="http://localhost:1929" target="_blank">GSI</a>';
+					        			echo '<a href="http://localhost:8081" target="_blank">GSI</a>';
 									}
 					        	?>
 
@@ -644,7 +644,7 @@
 								<a href="protect.php" onclick="myAjaxStats()">Logout</a>
 							</li>
 							<li>
-								<a href="stats/index.php?$id=2">My Stats</a>
+								<a href="index.php?$id=2">My Stats</a>
 							</li>
 						</ul>
 					</li>
