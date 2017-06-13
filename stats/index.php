@@ -633,20 +633,19 @@
 					<li class="button-dropdown">
 						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img src="<?php echo $steamprofile['avatar']; ?>"></a>
 						<ul class="dropdown-menu">
-							<li>
-								<?php 
+							<?php 
 					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
 					        		{
+					        			echo '<li>';
 					        			echo '<a href="http://localhost:8081" target="_blank">GSI</a>';
+					        			echo '</li>';
 									}
 					        	?>
-
-							</li>
-							<li>
-								<a href="protect.php" onclick="myAjaxStats()">Logout</a>
-							</li>
 							<li>
 								<a href="index.php?$id=2">My Stats</a>
+							</li>
+							<li>
+								<a href="../protect.php" onclick="myAjaxStats()">Logout</a>
 							</li>
 						</ul>
 					</li>
@@ -658,7 +657,7 @@
     
     <div class="stats-Container">
     <?php if (!isset($decodedS->response->players[0]->personaname)) {
-    	echo "<label id='StatsOffNameL' style='font-size: 60px; color: #008aff;  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;'>player is not set</label>";
+    	echo "<label id='StatsOffNameL' style='font-size: 60px; color: #008aff;  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;'>No STEAMID entered.</label>";
 	} 
 
 	else

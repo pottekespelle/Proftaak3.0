@@ -38,7 +38,7 @@ function myAjaxStats() {
     $.ajax({
          type: "POST",
          url: '../ajax/ajax.php',
-         data:{action:'call_this'},
+         data:{action:'call_this2'},
          success:function(html) {
            location.reload();
          }
