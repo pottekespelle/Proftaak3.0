@@ -17,20 +17,19 @@
 					<li class="button-dropdown">
 						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img src="<?php echo $steamprofile['avatar']; ?>"></a>
 						<ul class="dropdown-menu">
-							<li>
 								<?php 
 					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
 					        		{
-					        			echo '<a href="http://localhost:1929" target="_blank">GSI</a>';
+					        			echo '<li>';
+					        			echo '<a href="http://localhost:8081" target="_blank">GSI</a>';
+					        			echo '</li>';
 									}
 					        	?>
-
+							<li>
+								<a href="index.php?$id=2">My Stats</a>
 							</li>
 							<li>
 								<a href="#" onclick="myAjax()">Logout</a>
-							</li>
-							<li>
-								<a href="stats/index.php?$id=2">My Stats</a>
 							</li>
 						</ul>
 					</li>
