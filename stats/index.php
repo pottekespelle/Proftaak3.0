@@ -63,9 +63,10 @@
 	$decodedS = json_decode($jsonS);
 
 	if (!isset($decodedS->response->players[0]->personaname)) {
-		echo "is not set the player";
-		//die();
-	}
+		}
+
+	else
+	{
 /*
 	//$getSteamIDurl = "http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=D0C68A4E5F57A048312D534258583751&vanityurl=pottekespelle";
 
@@ -600,6 +601,7 @@
 		default:
 			# code...
 			break;
+		}
 	}
 ?>
 
@@ -655,6 +657,12 @@
     </div>
     
     <div class="stats-Container">
+    <?php if (!isset($decodedS->response->players[0]->personaname)) {
+    	echo "<label id='StatsOffNameL' style='font-size: 60px; color: #008aff;  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;'>player is not set</label>";
+	} 
+
+	else
+		{?>
     <div class="StatsOffName">
 		<label id="StatsOffNameL" style="font-size: 60px; color: #008aff;  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><?php echo $decodedS->response->players[0]->personaname; ?></label>	
 	</div>	
@@ -793,6 +801,7 @@
 	    	</div>
 	    </div>
     </div>
+    <?php } ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </div>
