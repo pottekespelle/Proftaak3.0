@@ -8,6 +8,6 @@
 		
 		try{
 			header('Refresh: 1; url=../'.$steamauth['logoutpage']);
-	}
+		}
 	}
 ?>
