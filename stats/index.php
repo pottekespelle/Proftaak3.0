@@ -2,6 +2,12 @@
 	require ('../SteamAuthentication/steamauth/steamauth.php');
 	include ('../SteamAuthentication/steamauth/userInfo.php');
 	
+	if ($_POST['steamid64Input'] == "") {
+		header("location: ../protect.php");
+	}
+
+	echo ($_POST['steamid64Input']);
+
 	error_reporting(0);
 	//session_start();
 	//made by niels van laarhoven	
