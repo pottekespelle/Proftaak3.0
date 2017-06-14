@@ -29,7 +29,6 @@
 }
 
 #stats-maps h1{
-	border-bottom: 3px solid black;
 	margin: 0 auto;
 	color: #008aff;
 	font-size: 30px;
@@ -37,7 +36,6 @@
 }
 
 #stats-guns h1{
-	border-bottom: 3px solid black;
 	margin: 0 auto;
 	color: #008aff;
 	font-size: 30px;
