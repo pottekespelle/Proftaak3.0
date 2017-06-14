@@ -5,22 +5,39 @@
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
 <div>
 	<div class="header">
 		<form method="post">
-        <a href="index.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
-        
+	        <a href="index.php"><img type="submit" name="destroy" src="img/logo.png" class="logo"></a>
 
+	        <div class="loggedinstats-index">
+
+	        	<ul class="nav">
+					<li class="button-dropdown">
+						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img id="PlayerAvatar" src="<?php echo $steamprofile['avatar']; ?>"></a>
+						<ul class="dropdown-menu">
+								<?php 
+					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
+					        		{
+					        			echo '<li>';
+					        			echo '<a href="http://localhost:8081" target="_blank">GSI</a>';
+					        			echo '</li>';
+									}
+					        	?>
+							<li>
+								<a href="stats/index.php?$id=2" name="Mystats">My Stats</a>
+							</li>
+							<li>
+								<a href="#" onclick="myAjax()">Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+	        	
+	        </div>
         </form>
-        <label class="login">
-	        <?php
-				loginbutton();
-			?>	
-		</label>
     </div>
-
 	<div class="home-content">
     	<h2>CSHUB</h2>
 
@@ -40,11 +57,10 @@
 
 <div class="footer">
 	<label class="copyright-footer">Copyright 2017 &copy; CSHUB</label>
-	<label class="madeby-footer">Made by: Niels v. Laarhoven</label>
+	<label class="madeby-footer">Made by: Niels v. Laarhoven &amp; Quinten Vis</label>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-
 </body>
 </html>

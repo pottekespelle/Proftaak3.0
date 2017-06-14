@@ -1,26 +1,23 @@
 <?php 
+error_reporting(0);
 	require ('../SteamAuthentication/steamauth/steamauth.php');
 	include ('../SteamAuthentication/steamauth/userInfo.php');
-	
-	if ($_POST['steamid64Input'] == "") {
-		header("location: ../protect.php");
+
+	if (isset($_POST['Mystats'])) {
+		echo "de my stats";
+		die();
 	}
-
-	echo ($_POST['steamid64Input']);
-
-	error_reporting(0);
-	//session_start();
-	//made by niels van laarhoven	
+	
+	/*if ($_POST['steamid64Input'] == "" && !isset($_POST['Mystats'])) {
+		//header("location: ../protect.php");
+		echo "iets andfet";
+		die();
+	}*/
 
 	/*if (!isset($_POST['steamid64Input'])) {
 		location("location: index.php");
 		die();
 	}*/
-
-	// if ($_POST['SteamIdInputButton'] == 0) {
-	// 	echo "nothing in input";
-	// 	header('location: ../protect.php');
-	// }
 
 	$api_key = "D0C68A4E5F57A048312D534258583751"; 
 	$steamid = " "; 
@@ -632,12 +629,15 @@
 <div>
 	<div class="header">
 		<form method="post" action="../index.php">
-	        <a href="../protect.php" name="destroy"><img src="../img/logo.png" class="logo"></a>
+	        <a href="../index.php" name="destroy"><img src="../img/logo.png" class="logo"></a>
 	        <div class="loggedinstats-index">
+	        <?php 
+	        if(isset($_SESSION['steamid']))
+			{?>
 
 	        	<ul class="nav">
 					<li class="button-dropdown">
-						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img src="<?php echo $steamprofile['avatar']; ?>"></a>
+						<a href="javascript:void(0)" class="dropdown-toggle"><?php echo $steamprofile['personaname']; ?> <img id="PlayerAvatar" src="<?php echo $steamprofile['avatar']; ?>"></a>
 						<ul class="dropdown-menu">
 							<?php 
 					        		if ($steamprofile['steamid'] == '76561198312027283' || '76561198344278706')
@@ -656,6 +656,16 @@
 						</ul>
 					</li>
 				</ul>
+				<?php } 
+				else
+				{ ?>
+					<label class="login">
+				        <?php
+							loginbutton();
+						?>	
+					</label>
+					<?php
+				}?>
 	        	
 	        </div>
         </form>

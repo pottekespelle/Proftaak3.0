@@ -44,17 +44,15 @@ body {
   font-size: 18px;
 }
 
-.loggedinstats-index img {
+#PlayerAvatar {
   height: 50px;
   margin-right: 20px;
 }
 
 .login {
-	right: 20px;
-	position: absolute;
-	top: 50%;
-	height: 32px;
-	margin-top: -16px;
+    right: 20px;
+    position: absolute;
+    top: 20%;
 }
 
 .home-content {
